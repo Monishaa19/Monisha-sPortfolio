@@ -1,0 +1,39 @@
+// console.error("Hello");
+// console.log("Hello");
+// console.warn("Hello");
+// alert("hello");
+// a=Number(prompt("Enter a number"))
+// console.log(`Entered number is ${a}`)
+// b=Number(prompt("Enter another number"))
+// console.log(`Entered number is ${b}`)
+
+// let sum=(x,y)=>{
+//     console.log(x+y);
+// };
+
+// let id = setInterval(()=>sum(a,b),2000);
+
+const student={
+    name:"aman",
+    marks:95,
+    getname:function(){
+        console.log(this);
+        console.log(this.name);
+    },
+    getmarks:()=>{
+        console.log(this);
+        console.log(this.marks);
+    },
+
+    getInfo1:function(){
+        setTimeout(function(){
+            console.log(this)
+        },2000)
+    },
+
+    getInfo2:function(){
+        setTimeout(()=>{
+            console.log(this)
+        },2000)
+    }
+}
