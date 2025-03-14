@@ -36,8 +36,8 @@ a{
 
 
 .navbar-collapse{
-    position: relative;
-    left: 20%;
+  position: relative;
+  right: 20%;
     
 }
 
@@ -55,3 +55,92 @@ footer p{
     font-family: "Sour Gummy", sans-serif !important;
 }
 
+/* General Styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar-nav .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+/* Main Section */
+.main {
+    padding: 40px 20px;
+}
+
+/* Responsive Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Text Section */
+.col-7 {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Image Section */
+.image {
+    flex: 1;
+    min-width: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Education and Experience Sections */
+pre {
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .col-7, .col-5 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .image {
+        margin: 20px auto;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
