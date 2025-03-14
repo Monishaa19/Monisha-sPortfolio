@@ -1,0 +1,57 @@
+
+.main{
+    
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+
+.image{
+    background: url("awardceremonies/avid.JPG") center/cover no-repeat;   
+    position: relative;
+    transition: background-image 1s ease-in-out;
+    border-radius: 50px;
+    min-height: 50vh;
+}
+
+h2,h3{
+    font-family: "Gentium Plus", serif;
+}
+
+pre{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+
+.navbar-collapse{
+    position: relative;
+    left: 20%;
+    
+}
+
+.name{
+    width: 13ch;
+    padding: 15px;
+    border: 2px dashed white;
+    
+}
+
+
+footer p{
+    background-color: #f8f9fa !important;
+    color: #212529;
+    font-family: "Sour Gummy", sans-serif !important;
+}
+

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses</title>
+<link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous"
+        />
+		<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+	background: #212529;
+	font-family: "Open Sans", sans-serif;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 30px auto 60px;
+	padding: 0 80px;
+}
+.carousel .item {
+    text-align: center;
+	overflow: hidden;
+}
+.carousel .item h4 {
+	font-family: 'Varela Round', sans-serif;
+}
+.carousel .item img {
+	max-width: 100%;
+	display: inline-block;
+}
+.carousel .item .btn {
+	border-radius: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: #a177ff;
+	padding: 6px 15px;
+	margin-top: 5px;
+}
+.carousel .item .btn:hover {
+	background: #8c5bff;
+}
+.carousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);   
+}
+.carousel .thumb-content {
+	padding: 15px;
+	font-size: 13px;
+}
+.carousel .carousel-control {
+	height: 44px;
+	width: 44px;
+	background: none;	
+    margin: auto 0;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+}
+.carousel .carousel-control i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+    font-weight: bold;
+}
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.carousel .carousel-control.right i {
+	margin-right: -3px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 4px;
+	border-color: transparent;
+}
+.carousel-indicators li {	
+	background: #ababab;
+}
+.carousel-indicators li.active {	
+	background: #555;
+}
+
+.carousel .item {
+    transition: transform 1s ease-in-out !important;
+}
+h3{
+
+	color:white;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.home-btn{
+	
+	margin: 2rem;
+}
+
+</style>
+</head>
+<body>
+
+	<button class="btn btn-secondary home-btn"> <a href="home.html"> Home</a></button>
+
+<div class="container ">
+	
+	<div class="row">
+		
+		<div class="col-md-10 col-center">
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators --><h3>Unstop</h3><br>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								
+								<div class="thumb-content">
+									<h4>AI ML</h4>
+									<p><img src="unstop certificates/AI ML.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								
+								<div class="thumb-content">
+									<h4>AWS</h4>
+									<p><img src="unstop certificates/AWS.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>				
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								
+								<div class="thumb-content">
+									<h4>Full Stack Web Dev</h4>
+									<p><img src="unstop certificates/Full stack web development.jpg"></p>
+									
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Cyber Security</h4>
+									<p><img src="unstop certificates/Cyber Securit.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Cloud Computing</h4>
+									<p><img src="unstop certificates/Cloud computing.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Ethical hacking</h4>
+									<p><img src="unstop certificates/Ethical hacking.jpg"></p>
+									
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								
+								<div class="thumb-content">
+									<h4>NLP Deep Learning</h4>
+									<p><img src="unstop certificates/NLP DL.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Git</h4>
+									<p><img src="unstop certificates/git.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>GitHUb</h4>
+									<p><img src="unstop certificates/github.jpg"></p>
+									
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left" style="color: white;"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right" style="color: white;"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-center">
+			<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators --><h3>SkillNation</h3><br>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel2" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Excel</h4>
+									<p><img src="SkillNation certificates/Basic-to-Advanced-Microsoft-Excel_Your-Certificate-for-Basic-to-Advanced-Microsoft-Excel_Monisha-A.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Power BI</h4>
+									<p><img src="SkillNation certificates/Basic-to-Advanced-Power-BI-Certificate_Your-Certificate-for-Business-Intelligence-using-Power-BI_Monisha-A-page-001.jpg"></p>
+									
+								</div>							
+							</div>
+						</div>				
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>PowerPoint</h4>
+									<p><img src="SkillNation certificates/Basic-to-Advanced-PowerPoint_Your-Certificate-for-Basic-to-Advanced-PowerPoint_Monisha-A-page-001.jpg"></p>
+									
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>SQL</h4>
+									<p><img src="SkillNation certificates/Basic-to-Advanced-SQL_Your-Certificate-for-Basic-to-Advanced-SQL_Monisha-A-page-001.jpg"></p>
+									
+								</div>							
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Tableau</h4>
+									<p><img src="SkillNation certificates/Basic-to-Advanced-Tableau-Dashboard_Your-Certificate-for-Basic-to-Advanced-Tableau-Dashboard_Monisha-A-page-001.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+				<i class="fa fa-angle-left" style="color: white;"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel2" data-slide="next">
+				<i class="fa fa-angle-right" style="color: white;"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-center">
+			<div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators --><h3>Apna College</h3><br>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>DSA in Java</h4>
+									<p><img src="/alpha certificate.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+				<i class="fa fa-angle-left" style="color: white;"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel3" data-slide="next">
+				<i class="fa fa-angle-right" style="color: white;"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-center">
+			<div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators --><h3>Others</h3><br>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Infosys Springboard Java</h4>
+									<p><img src="/Infosys java.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+									
+								<div class="thumb-content">
+									<h4>Techsparx Python</h4>
+									<p><img src="/techsparx python.jpg"></p>
+									
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel4" data-slide="prev">
+				<i class="fa fa-angle-left" style="color: white;"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel4" data-slide="next">
+				<i class="fa fa-angle-right" style="color: white;"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>                                		

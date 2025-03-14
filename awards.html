@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+        .gallery {
+            --s: 180px; /* Increased image size from 150px to 180px */             
+            display: grid;
+            transform-style: preserve-3d;
+            animation: r 15s linear infinite;
+            position: relative;
+        }
+        
+        @keyframes r {
+            0% {transform: perspective(500px) rotateX(-100deg) rotate(0deg)}
+            to {transform: perspective(500px) rotateX(-100deg) rotate(-360deg)}
+        }
+        
+        .gallery > .item {
+            grid-area: 1/1;
+            width: var(--s);
+            height: var(--s);
+            transform: rotate(var(--_a)) translateY(150%) rotateX(90deg); /* Increased Y translation for more spacing */
+            transform-style: preserve-3d;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .gallery > .item > img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            display: block;
+        }
+        
+        .gallery > .item > .caption {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            font-size: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border-radius: 0 0 10px 10px;
+            height: 20%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotateY(180deg);
+        }
+        
+        /* Adjusted angles for 8 images with more spacing */
+        .gallery > .item:nth-child(1) {--_a: 0deg}
+        .gallery > .item:nth-child(2) {--_a: 45deg}
+        .gallery > .item:nth-child(3) {--_a: 90deg}
+        .gallery > .item:nth-child(4) {--_a: 135deg}
+        .gallery > .item:nth-child(5) {--_a: 180deg}
+        .gallery > .item:nth-child(6) {--_a: 225deg}
+        .gallery > .item:nth-child(7) {--_a: 270deg}
+        .gallery > .item:nth-child(8) {--_a: 315deg}
+        
+        .gallery::before {
+            content: "";
+            position: absolute;
+            inset: -100%;
+            clip-path: polygon(50% 0, calc(50% + .707*50%) 14.64%, calc(50% + .923*50%) 38.27%, calc(50% + .978*50%) 61.73%, 50% 100%, calc(50% - .978*50%) 61.73%, calc(50% - .923*50%) 38.27%, calc(50% - .707*50%) 14.64%);
+            background: #212529;
+            transform: translateZ(calc(var(--s)/2)) rotate(90deg);
+        }
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+            background: #212529;
+            overflow: hidden;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .home-btn{
+            position: relative;
+            bottom: 20vh;
+            right: 40vw;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn btn-secondary home-btn"> <a href="home.html"> Home</a></button>
+    
+    <div class="gallery">
+        <div class="item">
+            <img src="/awards/20250220_160505.jpg" alt="Award Image 1">
+            <p class="caption">State Rank 5</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_160719.jpg" alt="Award Image 2">
+            <p class="caption">Exceptional Achiever</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_160758.jpg" alt="Award Image 3">
+            <p class="caption">Academic Excellence</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_160859.jpg" alt="Award Image 4">
+            <p class="caption">ICSE 2nd Rank</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_160933.jpg" alt="Award Image 5">
+            <p class="caption">I PU Topper</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_161231.jpg" alt="Award Image 6">
+            <p class="caption">ICSE History and CS centums</p>
+        </div>
+        
+        <div class="item">
+            <img src="/awards/20250220_161400.jpg" alt="Award Image 7">
+            <p class="caption">Avid Reader of RV PU</p>
+        </div>
+        
+        <div class="item">
+            <img src="awards/20250220_161500.jpg" alt="Award Image 8">
+            <p class="caption">KCET and Boards</p>
+        </div>
+    </div>
+</body>
+</html>

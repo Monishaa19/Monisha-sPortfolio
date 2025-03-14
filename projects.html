@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+    
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+    
+        body {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .carousel {
+            height: 400px; /* Adjusted height for better visibility */
+            perspective: 800px; /* Enhanced 3D effect */
+        }
+
+        .carousel .carousel-item {
+            width: 350px; /* Adjust width */
+            text-align: center;
+        }
+
+        .carousel .carousel-item img {
+            width: 100%;
+            border-radius: 15px; /* Smooth edges */
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+            height: 100%;
+        }
+
+        .carousel .carousel-item h3 {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #212529;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: -10px;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+      
+          *:focus {
+            outline: 0;
+          }
+          
+          html {
+            -webkit-tap-highlight-color: #212529;
+          }
+          
+         
+          
+          .carousel {
+              height: 700px;
+              perspective: 600px;
+              transform: translateY(-100px);
+          }
+          
+          .carousel .carousel-item {
+              cursor: grab;
+              width: 400px;
+          }
+          
+          .carousel .carousel-item:active {
+              cursor: grabbing;
+          }
+          
+          .carousel .carousel-item img {
+              width: 100%;
+          }
+          
+      
+
+          .navbar {
+            all: unset;
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: height 3s ease;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .carousel-item:hover .project-overlay {
+            height: 100%;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .project-description {
+            color: white;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        .demo-btn {
+            background-color: #26a69a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 3s ease;
+            text-decoration: none;
+        }
+        
+        .demo-btn:hover {
+            background-color: #2bbbad;
+        }
+        
+        .demo-btn i {
+            margin-left: 5px;
+        }
+
+        
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.home-btn{
+	
+	position: relative;
+    right: 40vw;
+    background-color: #212529;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <button class="btn btn-secondary home-btn"> <a href="home.html"> Home</a></button>
+
+    <h3>My Projects</h3>
+
+    <div class="carousel">
+        <div class="carousel-item">
+            <img src="projects/espresso.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    **Espresso** – A dynamic travel website designed to provide seamless **trip planning, destination guides, and personalized itineraries**, built using **HTML, CSS, JavaScript, SQL , Node, Express**. 🌍✈️
+                </div>
+                <a href="https://espresso-t2px.onrender.com" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>Espresso</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="projects/grocerysales.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    **Grocery Sales Analysis** – A data-driven project that examines **sales trends, customer purchasing patterns, and revenue insights** using **Python, Pandas, Sciket Learn and Tableau 📊🛒
+                </div>
+                <a href="https://monishaa19.github.io/SalesAnalysis/" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>Sales Analysis</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="projects/artire.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    **AR Try-On** – A virtual try-on app that lets users visualize clothing and jewelry using **Augmented Reality and LensStudio**. ✨
+                </div>
+                <a href="https://monishaa19.github.io/ARtire/" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>ARtire</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="projects/fakenews.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    Award and Internship Winning UI
+                </div>
+                <a href="https://monishaa19.github.io/TruthShieldAIGuard/" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>TruthShield AI Guard</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="projects/zerodha.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    **Zerodha Clone** – A stock trading platform with real-time data, charts, and order execution using **React, Node.js, and MongoDB**. 🚀
+                </div>
+                <a href="https://zerodha-cujg.onrender.com/" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>Zerodha</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="projects/sustainableselector.png" >
+            <div class="project-overlay">
+                <div class="project-description">
+                    **Sustainable Selector** – A smart tool that helps users **choose eco-friendly products** based on **sustainability ratings, carbon footprint, and ethical sourcing** using **Python, flask and Web languages**. 🌱🔍
+                </div>
+                <a href="https://sustainable-selector.onrender.com/" target="_blank" class="demo-btn">
+                    Live Demo <i class="material-icons">launch</i>
+                </a>
+            </div>
+            <h3>sustainable Selector</h3>
+        </div>
+        
+        <!-- <div class=" carousel-item">
+            <img src="https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg" alt="Dog">
+            <h3>Someone Famous 7</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg" alt="Dog">
+            <h3>Someone Famous 8</h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg" alt="Dog">
+            <h3>Someone Famous 9</h3>
+        </div> -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                dist: -100,  // Creates 3D depth
+                shift: 0,    // Keeps centered
+                padding: 0, // Space around items
+                numVisible: 5, // Show 5 images at a time
+                indicators: true // Navigation dots
+            });
+
+           
+        });
+    </script>
+
+</body>
+</html>
